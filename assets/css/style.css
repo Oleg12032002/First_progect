@@ -1,0 +1,362 @@
+body{
+    margin: 0;/*відступи*/
+    font-size: 15px;/*розмір шрифту*/
+    line-height: 1.6;/*міжрядковий інтервал*/
+    color: #fff;/*чорного кольору шрифт*/
+    background-color: #000;
+}
+
+h1,h2,h3,h4,h5,h6{
+}
+
+
+*,
+*:after,
+*:befor {
+    box-sizing: border-box;/*розміри блоків*/
+}
+
+.cont{
+    width: 100%;/*на ширину екрана*/
+    align-content: center;/*посередині*/
+    /*max-width: 1200px;*//*максимальна ширина 1200*/
+    margin: 0 auto;/*стандарто відступи 0*/
+}
+
+
+
+
+
+                    /*INTRO*/
+
+
+
+.intro_index {
+    display: flex;
+    flex-direction: column;/*основні направляючі в флекфі, положення флексів в контейнері(вертикально знизу-вверх)*/
+    justify-content: flex-end;
+    width: 100%;/*на ширину */
+    height: 100vh;/*на висоту екрана*/
+    background:url(../img/Intro.jpg) center no-repeat;/*по центру без повторень задній фон по юрл*/
+    background-size:cover;
+}
+
+
+.intro {
+    display: flex;
+    flex-direction: column;/*основні направляючі в флекфі, положення флексів в контейнері(вертикально знизу-вверх)*/
+    justify-content: flex-start;
+    width: 100%;/*на ширину */
+    height: 25vh;/*на висоту екрана*/
+    background:url(../img/Intro.jpg) center no-repeat;/*по центру без повторень задній фон по юрл*/
+    background-size:cover;
+}
+
+
+.intro_title{
+    font-size:100px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1;
+    color: #fff;
+}
+
+
+
+
+
+
+
+.header_iner{
+    display:flex;/*це флекс*/
+    justify-content:space-between;/*дає можливість розташувати елементи в лінію*/
+    align-items:center;
+}
+
+
+.header {
+    padding-top:30px;
+    width: 100%;
+    position: absolute;/*дає можливість встановлювати позицію*/
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;/*поверх чго*/
+}
+
+
+
+
+
+                    /*NAV*/
+
+
+
+
+.nav {
+    font-size: 18px; /*розмір шрифту*/
+    text-transform: uppercase; /*як писати літери, все в верхньому регістрі*/
+    transition: color 0.2s linear;/*плавний перехід*/
+}
+
+.nav_link {
+    display: inline-block;/*ідуть в один рядок*/
+    vertical-align: top;/*зверху*/
+    margin: 0 20px;
+    position: relative;/*псевдо елемент вирівнюється відносно цього елементу*/
+    color: #fff; /*колір тексту*/
+    text-decoration: none; /*заберає нижнє підкреслення у посилань*/
+}
+
+
+.nav_link:after/*псевдо елемент*/{
+    content: "";/*без даних*/
+    opacity: 0;/*в блоці*/
+    width: 100%;/*ширина*/
+    height: 4px;/*висота*/
+    background-color:#FFD700;/*колір фону*/
+    position: absolute;/*встанов позицію*/
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transform: opacity 0.2s linear;
+}
+
+.nav_link:hover/*при наведенні*/{
+    color: #FFD700;
+}
+.nav_link:hover:after/*при наведенні*/{
+    opacity: 1;
+}
+
+
+
+                /*SECTION*/
+
+
+
+.section{
+    padding: 80px 0;
+}
+
+.section_header{
+    width: 100%;
+    max-width: 950px;
+    margin:0 auto 40px;
+    text-align: center;
+}
+.section_title{
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+
+.section_title:after{
+    content: "";
+    display: block;
+    width: 70px;
+    height: 4px;
+    margin: 30px auto 0;
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+.section_end{
+    font-size: 16px;
+    font-family: cursive;
+    margin-bottom: 100px;
+}
+
+/*Button*/
+.buttom{
+    text-decoration: none;
+    color: #DC143C;
+    font-size: 16px;
+    font-family: cursive;
+    padding: 10px 15px;
+    border: 3px solid #fff;
+    text-transform: uppercase;
+    transition: font-size 0.1s linear, color 0.1s linear, background 0.1s linear ;
+    border-radius: 5px;
+}
+
+.buttom:hover{
+    background-color: #fff;
+    font-size: 22px;
+}
+.wol{
+    display:flex;
+}
+.wol_text_title{
+    text-align: center;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+
+.wol_section_text{
+    width: 70%;
+    text-indent: 30px;
+    text-align: left;
+}
+
+.wol_img{
+    display: block;
+    margin: 100px auto;
+}
+.wol_history_img{
+    margin-bottom: 300px;
+}
+.wol_comand_text{
+    color: #fff;
+    display: block;
+    margin: 40px 20px;
+    text-align: left;
+}
+
+
+
+.wol_comand_img{
+    width: 50%;
+}
+
+                /*TABLE*/
+.table_comand{
+    background-color: #fff;
+    color: #333;
+    width: 100%;
+    font-size: 15px;
+    border: 2px solid #FF0000;
+    border-collapse: collapse;
+}
+
+.line_table_comand{
+    border: 2px solid #FF0000;
+}
+
+.line_table_reit{
+    border: 2px solid #FF0000;
+}
+
+.table_link{
+    text-decoration: none;
+    color: #000;
+    transition: color 0.1s linear;
+}
+
+
+.table_link:hover{
+    color: #FF8C00;
+}
+
+
+            /*FOOTER*/
+.footer{
+    display: flex;
+    color: #000;
+    background-color: #fff;
+    background:url(../img/Rakuten.jpg) center no-repeat;
+    opacity: 0.5;
+    width: 100%;
+    height: 100px;
+}
+.line_table_reit th{
+    border: 2px solid #FF0000;
+    text-align: left;
+    padding-left: 10px;
+}
+
+
+
+.about_1{
+    width: 100%;
+    background: url(../img/about_1.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.about_2{
+    width: 100%;
+    background: url(../img/about_2.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.about_3{
+    width: 100%;
+    background: url(../img/about_3.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.about_4{
+    width: 100%;
+    background: url(../img/about_4.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.about_5{
+    width: 100%;
+    background: url(../img/about_5.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.about_6{
+    width: 100%;
+    background: url(../img/about_6.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.video_match{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    direction: flex;
+    justify-content: space-between;
+    align-content: stretch;
+}
+
+.video_first{
+    flex-grow: 1;
+    flex-shrink: 1;
+    align-content: stretch;
+}
+.video_first2{
+    flex-grow: 1;
+    flex-shrink: 1;
+    align-content: stretch;
+}
+
+.text_video{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text_video_1{
+    font-style: bold;
+    font-size: 30px;
+    padding: 10px;
+    margin-left: 20px;
+    width: 50%;
+}
+.text_video_2{
+    font-style: bold;
+    font-size: 30px;
+    padding: 10px;
+    margin-left: 20px;
+    width: 50%;
+}
+
+
+.wol_text_first{
+    text-indent: 30px;
+    padding: none;
+    margin: 0px;
+    text-align: justify;
+}
+
+
